@@ -4,8 +4,7 @@
 
 /* ---------- Color Tokens ---------- */
 :root{
-  --bg: #e0f2fe;           /* light blue background */
-  --bg2:#cbd5e1;           /* soft grey gradient */
+  --bg: #e0f2fe;           /* solid light blue background */
   --ink:#1e293b;           /* dark navy text */
   --muted:#475569;         /* medium grey for paragraphs */
   --card:#f8fafcdd;        /* frosted light card */
@@ -16,9 +15,8 @@
   --btn-hover:#0284c7;     /* darker cyan */
   --btn-ink:#ffffff;       /* white button text */
 
-  --shadow-lg: 0 20px 35px rgba(30, 41, 59, .18);
-  --shadow-md: 0 10px 20px rgba(30, 41, 59, .12);
-  --glass-blur: 12px;
+  --btn-about:#fff9c4;     /* light yellow */
+  --btn-about-hover:#fff176; /* brighter yellow hover */
 }
 
 /* ---------- Reset ---------- */
@@ -31,18 +29,19 @@ body{
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--ink);
-  background: linear-gradient(135deg, var(--bg), var(--bg2));
+  background: var(--bg);
 }
 
-/* Make headings bold and striking */
 h1,h2,h3{
   font-weight: 800;
   letter-spacing: 0.5px;
+  margin: 0 0 .6rem;
   color: var(--ink);
 }
 p{
   color: var(--muted);
   font-weight: 500;
+  margin: .4rem 0 0;
 }
 
 /* ---------- Layout ---------- */
@@ -55,13 +54,13 @@ section{
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 8px 18px rgba(30, 41, 59, .15);
+  backdrop-filter: blur(10px);
 }
 
 /* ---------- Navigation ---------- */
 nav{
-  display:flex; gap:1rem; flex-wrap:wrap;
+  display:flex; gap:1rem; flex-wrap:wrap; padding:1rem;
 }
 nav a{
   color: var(--ink);
@@ -69,11 +68,12 @@ nav a{
   font-weight: 600;
   padding: .6rem 1rem;
   border-radius: 8px;
-  transition: background-color .2s ease;
+  transition: background-color .2s ease, transform .1s ease;
 }
 nav a:hover{
   background: var(--bg);
   color: #0ea5e9;
+  transform: translateY(-2px);
 }
 
 /* ---------- Buttons ---------- */
@@ -88,6 +88,15 @@ nav a:hover{
   transition: transform .15s ease, filter .15s ease;
 }
 .btn:hover{ transform: scale(1.05); }
+
+/* Special styling for the About Us button */
+.btn-about {
+  background: var(--btn-about);
+  color: var(--ink);
+}
+.btn-about:hover {
+  background: var(--btn-about-hover);
+}
 
 /* ---------- Footer ---------- */
 footer{
