@@ -27,11 +27,11 @@ body {
   margin-bottom: 25px;
 }
 
-/* Navigation Buttons */
 .nav-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 15px;
+  margin-right: 40px; /* it should add more space to the right side */
 }
 
 .btn {
