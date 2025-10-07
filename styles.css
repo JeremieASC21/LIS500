@@ -15,23 +15,20 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Header Content */
-.header-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* Keep header content centered */
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.header-content h2 {
-  font-weight: 300;
-  color: #cfd8dc;
-  margin-bottom: 25px;
-}
-
+/* Navigation Buttons */
 .nav-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;   /* centers the buttons horizontally */
+  align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
-  margin-right: 40px; /* it should add more space to the right side */
+  margin-top: 15px;
 }
 
 .btn {
