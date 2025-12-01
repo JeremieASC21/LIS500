@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Basic Website</title>
+    <title>Project Statement - LIS 500</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
-
 </head>
+
 <body>
 
-   <header class="site-header">
+<header class="site-header">
   <div class="header-content">
     <h1>Welcome to our Website for LIS 500</h1>
     <nav class="nav-buttons">
@@ -24,32 +23,82 @@
   </div>
 </header>
 
-  <!-- Page Content -->
 <main>
+
   <section>
-    <h1>Reflections on our Project</h1>
-    <p>
-      
-    </p>
+    <h1>Reflections on Our Project</h1>
   </section>
 
   <!-- Project Statement -->
   <section>
     <h1>Project Statement</h1>
+
+    <h2>Introduction</h2>
     <p>
-      
+    Our group decided to create a machine learning model using Teachable Machine with Google to examine how the experience connects to themes discussed in Joy Buolamwini’s <em>Unmasking AI</em>. A central lesson from <em>Unmasking AI</em> that resonated with us is that artificial intelligence systems reflect the biases, values, and blind spots of the people who design and train them. As we completed the model, we realized that the process of training and testing our own classifier revealed several of the concerns Buolamwini identifies regarding the limitations and biases embedded within artificial intelligence in her writing.
     </p>
+
+    <p>
+    Our project involved constructing an image classification model that attempts to identify three emotional expressions: happy, sad, and angry. As we collected training samples and observed how the model responded, we became increasingly aware of how sensitive machine learning systems are to lighting, positioning, and other subtle contextual variables. Completing this project also strengthened our understanding of the broader theme of “code and power,” because the small design decisions we made directly shaped the model’s behavior and determined which faces and expressions it could recognize accurately.
+    </p>
+
+    <p>
+    When our model struggled with facial expressions that seemed obvious to us, we gained a clearer understanding of the issues Buolamwini raises concerning accuracy, representation, and unequal technological harm. Our small-scale experiment became a clear demonstration of how artificial intelligence does not interpret human behavior as effectively as it often claims to do, and how easily misunderstanding occurs when a system relies exclusively on surface-level visual patterns rather than a deeper understanding of context. Through this assignment, we recognized how quickly machine learning systems reproduce the assumptions of their creators and how awareness of implicit bias is essential when designing or evaluating any form of automated decision making.
+    </p>
+
+    <h2>About Our Model</h2>
+    <p>
+    To begin, we constructed an image classification model with three output categories: happy, sad, and angry. We selected these expressions because they are common emotional states that many commercial systems attempt to identify, and because each expression involves distinct visual cues that could reasonably be captured through a beginner dataset. We used the Teachable Machine webcam tool to gather training images for each category. Our final dataset consisted of thirty-one images labeled as happy, thirty-eight labeled as sad, and twenty-eight labeled as angry. We followed the instructions from the example video included in the course materials and captured several images of each emotion to improve the model’s performance.
+    </p>
+
+    <p>
+    All of the images were taken of Olivia in an indoor setting with consistent lighting. While this created a controlled environment, it also limited the range of facial features, skin tones, and expressions represented in our dataset. As a result, the model learned what these emotions look like only on one particular face rather than across a broad or diverse set of individuals. The classifier therefore learned highly specific visual patterns, which meant the model reflected only the characteristics present in the training images rather than any universal understanding of human emotion. This realization echoes Buolamwini’s critique that artificial intelligence often performs best for the individuals it “sees” most frequently, and it performs noticeably worse for individuals outside that narrow representation.
+    </p>
+
+    <h2>Training the Model</h2>
+    <p>
+    Training the model required consistency and awareness of the small details that shape machine learning performance. We realized early in the process that expressions naturally shift as they are held, and this variability influenced the appearance of the training samples. Olivia explained that her happy expression changed slightly each time she smiled, and the sad and angry expressions required intentional effort to maintain without drifting toward an expression that looked more neutral.
+    </p>
+
+    <p>
+    Environmental conditions created additional challenges as well. Lighting played a major role in determining the clarity of the images, since even slight shifts in brightness or the presence of shadows altered how the model interpreted facial features. Positioning also contributed to variation. Small changes in head angle, distance from the camera, or background details influenced the resulting samples. Although we tried to maintain consistency during the image-capturing process, complete uniformity was not possible.
+    </p>
+
+    <p>
+    Through this experience, we gained a clearer understanding of how difficult it is to build a reliable dataset. Minor and unintentional variations can shape how a model learns, which explains why commercial systems often fail when real users do not match the conditions under which the system was trained. Buolamwini’s emphasis on the importance of training data quality became far more tangible once we attempted to create our own dataset and saw how sensitive the model was to small inconsistencies. This also highlighted how implicit bias can enter a system not because of malicious intent but simply because the data itself reflects a narrow set of experiences and identities.
+    </p>
+
+    <h2>Results of the Model</h2>
+    <p>
+    After training the model, we discovered that it performed well only when the expressions were very exaggerated. Clear smiles or intense angry faces produced confident predictions, which demonstrated that the classifier could recognize strong visual cues. However, the model struggled with subtle expressions. It frequently confused sad and angry, especially when facial cues were faint or ambiguous. This confirmed that the classifier detects surface-level patterns rather than interpreting emotional meaning.
+    </p>
+
+    <p>
+    Accuracy declined whenever lighting changed or when the individual moved slightly. Shadows, dimmer conditions, or small shifts in angle caused inconsistent predictions. These issues reflected the fragility of machine learning systems and illustrated why real-world models often fail when conditions differ from their training environment. Even in our small project, we observed the same weaknesses that appear in large commercial systems, particularly those criticized in <em>Unmasking AI</em>.
+    </p>
+
+    <h2>Reflection: Unmasking AI, Intersectionality, Implicit Bias, Ethics</h2>
+    <p>
+    Our project reflected many of the concerns that Joy Buolamwini raises in <em>Unmasking AI</em>. As we trained and tested our model, we recognized how easily artificial intelligence systems inherit the limitations of their creators. Our dataset consisted of a single face photographed in controlled conditions, which meant the model learned a very narrow representation of emotional expression. Buolamwini’s concept of the “coded gaze” became clearer as we observed how the classifier reproduced our own assumptions rather than any universal understanding of emotion.
+    </p>
+
+    <p>
+    These observations connected directly to our course discussions of intersectionality and implicit bias, particularly Kimberlé Crenshaw’s explanation of how overlapping identities shape people’s interactions with technology and institutions. The model revealed how implicit bias enters technical systems through uneven data and assumptions about which faces and expressions represent the default. This small example mirrored the larger structural issues described in the book, where commercial systems frequently misidentify women, people with darker skin tones, and individuals who do not resemble the groups prioritized in training datasets.
+    </p>
+
+    <p>
+    We also gained a deeper appreciation for the ethical concerns associated with emotional classification. If a small model like ours can misinterpret clear expressions, then large systems used in hiring, policing, and education pose significant risks. Mislabeling someone as angry, disengaged, or untrustworthy can influence how they are treated, and those consequences often fall most heavily on marginalized communities. Our work confirmed Buolamwini’s argument that artificial intelligence must be developed with critical awareness, ethical responsibility, and accountability.
+    </p>
+
+    <p>
+    Overall, this assignment showed us how fragile machine learning systems are and how deeply they depend on the quality, representativeness, and breadth of the data they receive. Our experience reinforced the importance of examining how code and power influence which identities are included, which are overlooked, and who is accurately recognized by technology. By observing the limitations of our own model, we developed a clearer understanding of the social, cultural, and ethical stakes involved in artificial intelligence design and deployment.
+    </p>
+
   </section>
 
 </main>
 
-
-
-
-    
-<!-- Footer -->
-<footer class="site-footer"> LIS 500 Project: Created by Olivia, Jeremie, and Alayna
-</footer>
+<footer class="site-footer"> LIS 500 Project: Created by Olivia, Jeremie, and Alayna </footer>
 
 </body>
 </html>
