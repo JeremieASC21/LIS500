@@ -6,15 +6,11 @@ body {
   color: #333;
 }
 
-/*Video */
 .video-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;   /* stack h2 and iframe */
+  align-items: center;      /* center them horizontally */
 }
-
-.video-wrapper iframe {
-  display: inline-block;
-}
-
 /* Header Bar */
 .site-header {
   background-color: #2c3e50;
