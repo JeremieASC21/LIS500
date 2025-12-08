@@ -167,9 +167,6 @@ a:hover {
 
 /* Start button */
 .button {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: #5d7ca6;
   border: none;
   color: white;
