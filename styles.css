@@ -166,7 +166,7 @@ a:hover {
 }
 
 /* Start button */
-.start button {
+.button {
   display: flex;
   justify-content: center;   /* centers the buttons horizontally */
   align-items: center;
