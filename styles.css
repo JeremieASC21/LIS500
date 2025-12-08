@@ -175,12 +175,12 @@ a:hover {
 
 .button {
   background-color: #5d7ca6;
+  border: none;
   color: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  font-size: 30px;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100px;
 }
 
 .button:hover {
