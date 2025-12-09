@@ -48,12 +48,13 @@
     </p>
 
     <p>
-    All of the images were taken of Olivia in an indoor setting with consistent lighting. While this created a controlled environment, it also limited the range of facial features, skin tones, and expressions represented in our dataset. As a result, the model learned what these emotions look like only on one particular face rather than across a broad or diverse set of individuals. The classifier therefore learned highly specific visual patterns, which meant the model reflected only the characteristics present in the training images rather than any universal understanding of human emotion. This realization echoes Buolamwini’s critique that artificial intelligence often performs best for the individuals it “sees” most frequently, and it performs noticeably worse for individuals outside that narrow representation.
+    All of the original images were taken of Olivia in an indoor setting with consistent lighting. While this created a controlled environment, it also limited the range of facial features, skin tones, and expressions represented in our dataset. As a result, the model learned what these emotions look like only on one particular face rather than across a broad or diverse set of individuals. The classifier therefore learned highly specific visual patterns, which meant the model reflected only the characteristics present in the training images rather than any universal understanding of human emotion. This realization echoes Buolamwini’s critique that artificial intelligence often performs best for the individuals it “sees” most frequently, and it performs noticeably worse for individuals outside that narrow representation.
+    As a result, we added additional images of Alayna, also in an indoor setting and with consistent lighting and various hairstyles.
     </p>
 
     <h2>Training the Model</h2>
     <p>
-    Training the model required consistency and awareness of the small details that shape machine learning performance. We realized early in the process that expressions naturally shift as they are held, and this variability influenced the appearance of the training samples. Olivia explained that her happy expression changed slightly each time she smiled, and the sad and angry expressions required intentional effort to maintain without drifting toward an expression that looked more neutral.
+    Training the model required consistency and awareness of the small details that shape machine learning performance. We realized early in the process that expressions naturally shift as they are held, and this variability influenced the appearance of the training samples. Olivia explained that her happy expression changed slightly each time she smiled, and the sad and angry expressions required intentional effort to maintain without drifting toward an expression that looked more neutral. Alayna noticed similar issues, so she tried to include as many variations of happy, sad, and angry expressions as possible in the hope of improving the machine's accuracy.
     </p>
 
     <p>
